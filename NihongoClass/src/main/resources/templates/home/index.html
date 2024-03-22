@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Classes</title>
+    <link th:href="@{/images/x-icon.ico}">
+    <!--    <link rel="icon" type="image/x-icon" th:href="@{/images/x-icon.ico}" />-->
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" th:href="@{/css/boxchat.css}" />
+    <link rel="stylesheet" th:href="@{/css/course.css}" />
+</head>
+<body>
+<div th:insert="fragments/header :: header"></div>
+    <!-- main - start -->
+    <main>
+        <div class="menus">
+            <div class="slides">
+                <div class="slide-imgs">
+                    <a class="slide-img" href="./course.html?id=27">
+                        <img th:src="@{/images/slide-01.jpg}" alt="" />
+                    </a>
+                    <a class="slide-img" href="./course.html?id=21">
+                        <img src="./images/slide-02.jpg" alt="" />
+                    </a>
+                    <a class="slide-img" href="/course.html?id=22">
+                        <img src="./images/slide-03.jpg" alt="" />
+                    </a>
+                    <a class="slide-img" href="./course.html?id=1">
+                        <img src="./images/slide-04.jpg" alt="" />
+                    </a>
+                    <a class="slide-img" href="./course.html?id=6">
+                        <img src="./images/slide-05.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="slide-dots">
+                    <span class="dot-active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="hot-topic">
+            <div class="hot-topic-top">
+                <h2>BEST SELLERS</h2>
+                <a class="hot-topic-viewmore" href="./search.html?filter=top-buy">
+                    <span>View more</span><i class="bi bi-chevron-double-right"></i>
+                </a>
+            </div>
+            <div class="hot-topic-body" id="top-buy"></div>
+        </div>
+
+        <div class="hot-topic">
+            <div class="hot-topic-top">
+                <h2>SPECIAL OFFERS TODAY</h2>
+                <a class="hot-topic-viewmore" href="./search.html?filter=top-sale">
+                    <span>View more</span><i class="bi bi-chevron-double-right"></i>
+                </a>
+            </div>
+            <div class="hot-topic-body" id="top-discount"></div>
+        </div>
+
+        <div class="trending">
+            <div class="trending-wrapper">
+                <div class="trending-item new-course">
+                    <div class="hot-topic-top">
+                        <h2>NEW RELEASES</h2>
+                        <a
+                                class="hot-topic-viewmore"
+                                href="./search.html?filter=recent"
+                        >
+                  <span>View more</span
+                  ><i class="bi bi-chevron-double-right"></i>
+                        </a>
+                    </div>
+                    <div class="trending-item-wrapper">
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                    </div>
+
+                    <div class="trending-dots">
+                        <span class="dot-active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="trending-item most-student">
+                    <div class="hot-topic-top">
+                        <h2>MOST POPULAR</h2>
+                        <a
+                                class="hot-topic-viewmore"
+                                href="./search.html?filter=top-buy"
+                        >
+                  <span>View more</span
+                  ><i class="bi bi-chevron-double-right"></i>
+                        </a>
+                    </div>
+                    <div class="trending-item-wrapper">
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                    </div>
+                    <div class="trending-dots">
+                        <span class="dot-active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="trending-item vip-course">
+                    <div class="hot-topic-top">
+                        <h2>VIP COURSES</h2>
+                        <a
+                                class="hot-topic-viewmore"
+                                href="./search.html?filter=vip-course"
+                        >
+                  <span>View more</span
+                  ><i class="bi bi-chevron-double-right"></i>
+                        </a>
+                    </div>
+                    <div class="trending-item-wrapper">
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                        <div class="trending-item-wrapper-column"></div>
+                    </div>
+                    <div class="trending-dots">
+                        <span class="dot-active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hot-topic">
+            <div class="hot-topic-top">
+                <h2>BUSINESS AND STARTUP</h2>
+                <a
+                        class="hot-topic-viewmore"
+                        href="./tag-section.html?section=business-and-startup"
+                >
+                    <span>View more</span><i class="bi bi-chevron-double-right"></i>
+                </a>
+            </div>
+            <div class="hot-topic-body" id="top-business"></div>
+        </div>
+
+        <div class="hot-topic">
+            <h2 class="combo-h2">CONQUER YOUR GOAL</h2>
+            <div class="combo">
+                <div class="combo-row combo-row-2">
+                    <a class="combo-item" href="./combo.html?combo=1">
+                        <div class="combo-img">
+                            <img src="./images/stock-combo.jpg" alt="" />
+                        </div>
+                        <div class="combo-wrapper">
+                            <div class="combo-title">
+                                <div class="combo-icon"><i class="bi bi-coin"></i></div>
+                                <div class="combo-desc">
+                                    <div class="combo-name">
+                                        PROFESSIONAL STOCK INVESTMENT
+                                    </div>
+                                    <div class="combo-count-course">2 courses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="combo-item" href="./combo.html?combo=2">
+                        <div class="combo-img">
+                            <img src="./images/marketing-combo.jpg" alt="" />
+                        </div>
+                        <div class="combo-wrapper">
+                            <div class="combo-title">
+                                <div class="combo-icon green">
+                                    <i class="bi bi-bank"></i>
+                                </div>
+                                <div class="combo-desc">
+                                    <div class="combo-name">
+                                        Professional stock investment
+                                    </div>
+                                    <div class="combo-count-course">2 courses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="combo-row combo-row-3">
+                    <a class="combo-item" href="./combo.html?combo=3">
+                        <div class="combo-img">
+                            <img src="./images/office-combo.jpg" alt="" />
+                        </div>
+                        <div class="combo-wrapper">
+                            <div class="combo-title">
+                                <div class="combo-icon orange">
+                                    <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                </div>
+                                <div class="combo-desc">
+                                    <div class="combo-name">
+                                        Misa Excell Accounting Informatics Combo
+                                    </div>
+                                    <div class="combo-count-course">2 courses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="combo-item" href="./combo.html?combo=4">
+                        <div class="combo-img">
+                            <img src="./images/social-combo.jpg" alt="" />
+                        </div>
+                        <div class="combo-wrapper">
+                            <div class="combo-title">
+                                <div class="combo-icon pink">
+                                    <i class="bi bi-megaphone"></i>
+                                </div>
+                                <div class="combo-desc">
+                                    <div class="combo-name">
+                                        Confidently communicate in English
+                                    </div>
+                                    <div class="combo-count-course">2 courses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="combo-item" href="./combo.html?combo=5">
+                        <div class="combo-img">
+                            <img src="./images/korea-combo.jpg" alt="" />
+                        </div>
+                        <div class="combo-wrapper">
+                            <div class="combo-title">
+                                <div class="combo-icon purple">
+                                    <i class="bi bi-translate"></i>
+                                </div>
+                                <div class="combo-desc">
+                                    <div class="combo-name">Korean Learning Combo</div>
+                                    <div class="combo-count-course">2 courses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-fa">
+            <a href="./search.html?filter=all">View more</a>
+        </div>
+
+        <div class="hot-topic">
+            <div class="catalog">
+                <h2 class="catalog-h2">
+                    Haven't found the course you're interested in? <br />
+                    StarClasses has over 2,000 courses waiting for you to discover
+                </h2>
+                <div class="catalog-wrapper">
+                    <a class="catalog-item" href="./tag-section.html?section=design">
+                        <div class="catalog-item-img">
+                            <img src="./images/design.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Design</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=foreign-language"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/language.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Foreign language</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=marketing"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/marketing.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Marketing</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=business-and-startup"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/business.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Business and startup</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=information-technology"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/computer.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Information Technology</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=office-informatics"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/office.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Office Informatics</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=marriage-and-family"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/marriage.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Marriage and Gamily</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=health-and-gender"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/heal.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Health and Gender</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=lifestyle"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/lifestyle.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Lifestyle</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=raise-up-child"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/family.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Raise up child</div>
+                    </a>
+                    <a
+                            class="catalog-item"
+                            href="./tag-section.html?section=soft-skills"
+                    >
+                        <div class="catalog-item-img">
+                            <img src="./images/successful.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Self-development</div>
+                    </a>
+                    <a class="catalog-item" href="./tag-section.html?section=sales">
+                        <div class="catalog-item-img">
+                            <img src="./images/pie-chart.png" alt="" />
+                        </div>
+                        <div class="catalog-name">Sales</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hot-topic">
+            <div class="hot-teacher">
+                <h2 class="hot-teacher-h2">Typical teacher</h2>
+                <div class="teacher-pre"><i class="bi bi-chevron-left"></i></div>
+                <div class="teacher-next"><i class="bi bi-chevron-right"></i></div>
+                <div class="teacher-box">
+                    <div class="teacher-wrapper"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-item-full">
+            <div class="partner">
+                <div class="parter-title">Become a teacher of Star Classes</div>
+                <div class="parter-desc">
+                    More than 500 teachers have courses on Star Classes
+                </div>
+                <div class="button-fa button-big">
+                    <a href="./become-teacher.html">Sign up now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main - end -->
+    <!-- Search box hiển thị kết quả tìm kiếm -->
+    <div class="search-result-popup">
+        <a class="search-result-item-popup" href="#"></a>
+    </div>
+    <!-- Chat with employee -->
+    <div class="chat-icon">
+        <i class="bi bi-chat-fill"></i>
+    </div>
+    <div class="box-chat box-hide">
+        <div class="box-chat-top">
+            <a href="./index.html" class="logo logo-animation">
+                <div class="logo-inner">
+                    <img src="./images/logo.png" alt="" />
+                </div>
+                <span class="logo-title">Star Classes</span>
+            </a>
+            <span class="box-minimize"><i class="bi bi-dash-lg"></i></span>
+        </div>
+        <div class="box-chat-content">
+            <div class="box-chat-content-intro">
+                <div class="box-chat-title">Chat with Star Classes</div>
+                <div class="box-chat-desc">Welcome to Star Classes</div>
+                <div>We're here to support you!</div>
+            </div>
+        </div>
+        <!-- <div class="box-chat-content"></div> -->
+        <form class="guest-input">
+            <div class="guest-input-item">
+                <input type="text" />
+                <span class="focus-input"></span>
+            </div>
+            <button class="button-guest-chat" type="submit">Send</button>
+        </form>
+        <div class="box-chat-button">Start Chat</div>
+    </div>
+
+    <!-- Popup NewStudent -->
+    <a href="#" class="new-student"> </a>
+<div th:insert="fragments/footer :: footer"></div>
+<script type="module" th:src="@{/js/user.js}"></script>
+<script th:src="@{/js/boxchat.js}"></script>
+<script type="module" th:src="@{/js/global.js}"></script>
+<script type="module" th:src="@{/js/render.js}"></script>
+<script type="module" th:src="@{/js/index.js}"></script>
+</body>
+</html>
